@@ -1,8 +1,8 @@
 {
-  "name": "parcel-boilerplate",
+  "name": "pokeapi-proyect",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -10,8 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-    "devDependencies": {
-      "parcel-bundler": "^1.11.0",
-      "sass": "^1.15.2"
-    }
+  "devDependencies": {
+    "parcel": "^2.3.2",
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.15.2"
+  }
 }
