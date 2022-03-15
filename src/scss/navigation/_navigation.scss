@@ -1,0 +1,41 @@
+.navbar {
+  background-color: $background;
+  border-radius: 20px 10px 50px 30px;
+  -webkit-border-radius: 20px 10px 50px 30px;
+  -moz-border-radius: 20px 10px 50px 30px;
+  border: 10px double;
+
+  &__container {
+    height: 50px;
+    &__list {
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      &__item {
+        color: $text;
+        &:hover {
+          color: $text-light;
+        }
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        a {
+          text-decoration: none;
+          color: $text;
+          font-size: 30px;
+          background-image: linear-gradient(to right, $text, white);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size 0.3s;
+          &:hover {
+            transition: color 150ms;
+            color: $text-light;
+            background-size: 100% 2px;
+          }
+        }
+      }
+    }
+  }
+}

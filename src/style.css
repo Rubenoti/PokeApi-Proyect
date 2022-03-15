@@ -1,0 +1,300 @@
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: #ffdddda1;
+  border-radius: 20px 10px 50px 30px;
+  -webkit-border-radius: 20px 10px 50px 30px;
+  -moz-border-radius: 20px 10px 50px 30px;
+  border: 10px double;
+}
+
+.navbar__container {
+  height: 50px;
+}
+
+.navbar__container__list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__container__list__item {
+  color: #92140c;
+}
+
+.navbar__container__list__item:hover {
+  color: #be5a38;
+}
+
+.navbar__container__list__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navbar__container__list__item a {
+  text-decoration: none;
+  color: #92140c;
+  font-size: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#92140c), to(white));
+  background-image: linear-gradient(to right, #92140c, white);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+.navbar__container__list__item a:hover {
+  -webkit-transition: color 150ms;
+  transition: color 150ms;
+  color: #be5a38;
+  background-size: 100% 2px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__logo {
+  width: 400px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.title img {
+  width: 100%;
+}
+
+.title__search {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__search input {
+  height: 30px;
+  border: 0;
+  border-bottom: 2px solid #92140c;
+}
+
+.title__search input:focus {
+  outline: none;
+}
+
+.title__search__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.title__search__btn button {
+  margin-top: 3px;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px 16px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #92140c;
+  border-color: #1b1f2326;
+  -webkit-box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+          box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  -webkit-transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  -webkit-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+}
+
+.title__search__btn button:hover {
+  background-color: #be5a38;
+  border-color: #1b1f2326;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.containerPoke {
+  margin: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containerPoke__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  width: 250px;
+  height: 400px;
+  margin: 3%;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 30px #aaaaaa;
+          box-shadow: 2px 2px 30px #aaaaaa;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, #be5a38));
+  background: linear-gradient(0deg, white 50%, #be5a38 50%);
+  -webkit-transition: all 1200ms;
+  transition: all 1200ms;
+}
+
+.containerPoke__card:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 1200ms;
+  transition: all 1200ms;
+  z-index: 99;
+}
+
+@media screen and (max-width: 420px) {
+  .containerPoke__card {
+    width: 500px;
+  }
+}
+
+.containerPoke__info {
+  height: 30%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerPoke p {
+  font-family: "Fredoka", sans-serif;
+}
+
+.containerPoke h2 {
+  font-family: "Fredoka", sans-serif;
+  width: 100%;
+  height: 15%;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.containerPoke img {
+  width: 90%;
+  height: 60%;
+}
+/*# sourceMappingURL=style.css.map */

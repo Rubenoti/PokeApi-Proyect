@@ -1,21 +1,25 @@
 @import "./_variables";
 
-// @include tablet {
-//   background-color: red;
-// }
+// Tablet media query
 
 @mixin tablet {
-  @media screen and (min-width: #{$tablet}) {
+  @media screen and (max-width: #{$tablet}) {
     @content;
   }
 }
 
-// @include desktop {
-//   background-color: blue;
-// }
+// Desktop media query
 
 @mixin desktop {
-  @media screen and (min-width: #{$desktop}) {
+  @media screen and (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+// Movile media query
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile}) {
     @content;
   }
 }

@@ -1,0 +1,61 @@
+.containerPoke {
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 250px;
+    height: 400px;
+    margin: 3%;
+    text-align: center;
+    box-shadow: 2px 2px 30px #aaaaaa;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(190, 90, 56, 1) 50%
+    );
+    &:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: all 1200ms;
+      z-index: 99;
+    }
+    transition: all 1200ms;
+    @include mobile {
+      width: 500px;
+    }
+  }
+  &__info {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+    font-family: "Fredoka", sans-serif;
+  }
+  h2 {
+    @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+    font-family: "Fredoka", sans-serif;
+    width: 100%;
+    height: 15%;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+  }
+  img {
+    width: 90%;
+    height: 60%;
+  }
+}
